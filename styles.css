@@ -1,0 +1,145 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Estilos para los productos */
+#productos {
+  margin-bottom: 40px;
+}
+
+.productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.producto {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.producto h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.producto p {
+  font-size: 14px;
+  color: #555;
+}
+
+.producto .precio {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.producto button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.producto button:hover {
+  background-color: #218838;
+}
+
+/* Estilos para el carrito */
+#carrito {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#listaCarrito {
+  list-style: none;
+  padding: 0;
+}
+
+#listaCarrito li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#listaCarrito li:last-child {
+  border-bottom: none;
+}
+
+#listaCarrito button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#listaCarrito button:hover {
+  background-color: #c82333;
+}
+
+#btnVaciarCarrito,
+#btnFinalizarCompra {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#btnVaciarCarrito:hover,
+#btnFinalizarCompra:hover {
+  background-color: #c82333;
+}
+
+footer {
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-align: center;
+}
