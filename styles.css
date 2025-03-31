@@ -119,12 +119,19 @@ main {
 }
 
 #listaCarrito button:hover {
-  background-color: #c82333;
+  background-color: #c2192a;
 }
 
-#btnVaciarCarrito,
-#btnFinalizarCompra {
+#btnVaciarCarrito {	
   background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#btnFinalizarCompra {
+  background-color: #3dcf7a;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -133,9 +140,12 @@ main {
   margin-top: 10px;
 }
 
-#btnVaciarCarrito:hover,
-#btnFinalizarCompra:hover {
+#btnVaciarCarrito:hover {
   background-color: #c82333;
+}
+
+#btnFinalizarCompra:hover {
+  background-color: #22a559;
 }
 
 footer {

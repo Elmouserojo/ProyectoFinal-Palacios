@@ -1,0 +1,13 @@
+[
+    { "id": 1, "nombre": "Harina", "precio": 1500, "imagen": "./imagenes/harina.jpg" },
+    { "id": 2, "nombre": "Bebida", "precio": 2000, "imagen": "./imagenes/coca.png" },
+    { "id": 3, "nombre": "Arvejas", "precio": 900, "imagen": "./imagenes/arvejas.png" },
+    { "id": 4, "nombre": "Arroz", "precio": 1200, "imagen": "./imagenes/arroz.png" },
+    { "id": 5, "nombre": "Fideos", "precio": 800, "imagen": "./imagenes/fideos.png" },
+    { "id": 6, "nombre": "Pan Rallado", "precio": 500, "imagen": "./imagenes/pan-rallado.png" },
+    { "id": 7, "nombre": "Comida para perros", "precio": 700, "imagen": "./imagenes/comida-perros.png" },
+    { "id": 8, "nombre": "Comida para gatos", "precio": 2500, "imagen": "./imagenes/comida-gato.png" },
+    { "id": 9, "nombre": "Galletitas", "precio": 1800, "imagen": "./imagenes/pepas.png" },
+    { "id": 10, "nombre": "Espirales", "precio": 5000, "imagen": "./imagenes/espirales.png" }
+  ]
+  
