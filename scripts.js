@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", async function () {
   const totalCarrito = document.getElementById("totalCarrito");
   const btnVaciarCarrito = document.getElementById("btnVaciarCarrito");
   const btnFinalizarCompra = document.getElementById("btnFinalizarCompra");
+    
+  
+  
 
   let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
   let productos = [];
@@ -139,6 +142,33 @@ document.addEventListener("DOMContentLoaded", async function () {
     });
   });
 
+  async function obtenerClima() {
+    const apiKey = "b552266d03694be0fed1b145703e2004"; // Acá va la API Key
+    const ciudad = "Buenos Aires";
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&units=metric&lang=es&appid=${apiKey}`;
+  
+    try {
+      const respuesta = await fetch(url);
+      if (!respuesta.ok) throw new Error("No se pudo obtener el clima");
+      
+      const datos = await respuesta.json();
+      const temperatura = datos.main.temp;
+      const descripcion = datos.weather[0].description;
+      const icono = `https://openweathermap.org/img/wn/${datos.weather[0].icon}.png`;
+  
+      // Mostrar los datos en la página
+      document.getElementById("clima").innerHTML = `
+        <p>Clima en ${ciudad}: ${descripcion}, ${temperatura}°C</p>
+        <img src="${icono}" alt="${descripcion}">
+      `;
+    } catch (error) {
+      console.error("Error obteniendo el clima:", error);
+      document.getElementById("clima").textContent = "No se pudo obtener el clima.";
+    }
+  }
+  
+  
+  obtenerClima();
   cargarProductos();
   actualizarCarrito();
 });
